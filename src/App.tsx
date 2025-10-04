@@ -22,7 +22,9 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import Dashboard from "./pages/Dashboard";
+import SitterDashboard from "./pages/SitterDashboard";
 import SitterProfile from "./pages/SitterProfile";
+import ProfileValidation from "./pages/ProfileValidation";
 import Booking from "./pages/Booking";
 import SitterOnboarding from "./pages/SitterOnboarding";
 import Admin from "./pages/Admin";
@@ -53,7 +55,9 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/sitter-dashboard" element={<SitterDashboard />} />
           <Route path="/sitter/:id" element={<SitterProfile />} />
+          <Route path="/profile-validation" element={<ProfileValidation />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/sitter-onboarding" element={<SitterOnboarding />} />
           <Route path="/admin" element={<Admin />} />

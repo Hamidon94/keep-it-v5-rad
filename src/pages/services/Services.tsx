@@ -169,53 +169,63 @@ const Services = () => {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="py-4 px-4">
-                        <div className="font-medium text-gray-900">Hébergement</div>
-                        <div className="text-sm text-gray-500">chez le pet sitter</div>
+                        <div className="font-medium text-gray-900">Promenade</div>
+                        <div className="text-sm text-gray-500">dans votre quartier</div>
                       </td>
-                      <td className="py-4 px-4 text-center text-gray-700">1+ nuits</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">25-40€/nuit</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Vacances, voyages</td>
+                      <td className="py-4 px-4 text-center text-gray-700">30 min / 1h</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Extérieur</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">7€ (30min) / 13€ (1h)</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Journées chargées</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-4">
+                        <div className="font-medium text-gray-900">Visite simple</div>
+                        <div className="text-sm text-gray-500">à votre domicile</div>
+                      </td>
+                      <td className="py-4 px-4 text-center text-gray-700">30 min</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">19€</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Chats, courtes absences</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-4">
+                        <div className="font-medium text-gray-900">Visite sanitaire</div>
+                        <div className="text-sm text-gray-500">entretien spécialisé</div>
+                      </td>
+                      <td className="py-4 px-4 text-center text-gray-700">30 min</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">35€</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Soins spécialisés</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-4">
                         <div className="font-medium text-gray-900">Garde à domicile</div>
                         <div className="text-sm text-gray-500">chez vous</div>
                       </td>
-                      <td className="py-4 px-4 text-center text-gray-700">1+ nuits</td>
+                      <td className="py-4 px-4 text-center text-gray-700">24h / nuitée</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">40-60€/nuit</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">31€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Animaux anxieux</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-4">
-                        <div className="font-medium text-gray-900">Promenade</div>
-                        <div className="text-sm text-gray-500">dans votre quartier</div>
-                      </td>
-                      <td className="py-4 px-4 text-center text-gray-700">30-60 min</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Extérieur</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">15-25€/promenade</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Journées chargées</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-4">
-                        <div className="font-medium text-gray-900">Garderie</div>
+                        <div className="font-medium text-gray-900">Pension canine</div>
                         <div className="text-sm text-gray-500">chez le pet sitter</div>
                       </td>
-                      <td className="py-4 px-4 text-center text-gray-700">Journée</td>
+                      <td className="py-4 px-4 text-center text-gray-700">24h</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">20-35€/jour</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Socialisation</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">26€</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Vacances, voyages</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-4">
-                        <div className="font-medium text-gray-900">Visites</div>
-                        <div className="text-sm text-gray-500">à votre domicile</div>
+                        <div className="font-medium text-gray-900">Accompagnement vétérinaire</div>
+                        <div className="text-sm text-gray-500">transport et accompagnement</div>
                       </td>
-                      <td className="py-4 px-4 text-center text-gray-700">30-60 min</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">15-20€/visite</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Chats, courtes absences</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Variable</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Vétérinaire</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">35€</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Urgences, consultations</td>
                     </tr>
                   </tbody>
                 </table>
