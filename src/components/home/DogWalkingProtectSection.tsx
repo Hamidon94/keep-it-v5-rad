@@ -16,7 +16,7 @@ const DogWalkingProtectSection = () => {
             </div>
             
             <p className="text-2xl font-semibold text-gray-800 mb-6">
-              Find peace of mind with every booking.
+              La sécurité et la confiance au cœur de chaque réservation.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -24,10 +24,10 @@ const DogWalkingProtectSection = () => {
                 <CheckCircle className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    Screened pet sitters
+                    Vérification d'identité obligatoire
                   </h3>
                   <p className="text-gray-600">
-                    have already passed a third-party identity verification.
+                    Tous nos promeneurs présentent une pièce d'identité vérifiée. Votre sécurité est notre priorité absolue.
                   </p>
                 </div>
               </div>
@@ -36,10 +36,10 @@ const DogWalkingProtectSection = () => {
                 <CheckCircle className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    The DogWalking Guarantee
+                    Casier judiciaire vierge B2 exigé
                   </h3>
                   <p className="text-gray-600">
-                    provides eligible bookings with coverage of up to $25,000 for veterinary care.
+                    Chaque promeneur fournit un casier judiciaire vierge B2. Une garantie de confiance unique sur le marché.
                   </p>
                 </div>
               </div>
@@ -48,10 +48,10 @@ const DogWalkingProtectSection = () => {
                 <Clock className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    24/7 support
+                    Support 24h/24 et 7j/7
                   </h3>
                   <p className="text-gray-600">
-                    Access our team whenever you need us, including emergency vet assistance.
+                    Notre équipe est disponible en permanence, y compris pour l'assistance vétérinaire d'urgence.
                   </p>
                 </div>
               </div>
@@ -60,17 +60,17 @@ const DogWalkingProtectSection = () => {
                 <Phone className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    Premium insurance
+                    Couverture jusqu'à 25 000€
                   </h3>
                   <p className="text-gray-600">
-                    Every booking includes premium pet injury protection and property damage coverage.
+                    Assurance premium incluse : soins vétérinaires, dommages matériels et protection complète de votre animal.
                   </p>
                 </div>
               </div>
             </div>
 
             <Button className="dogwalking-button-secondary">
-              Learn More About DogWalkingProtect
+              En savoir plus sur DogWalkingProtect
             </Button>
           </div>
 
@@ -83,28 +83,28 @@ const DogWalkingProtectSection = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Peace of Mind Protection
+                  Protection et Tranquillité d'Esprit
                 </h3>
                 
                 <p className="text-gray-600 mb-6">
-                  Every DogWalking booking is backed by comprehensive protection, 
-                  so you can focus on what matters most - your pet's happiness.
+                  Chaque réservation DogWalking est protégée par une couverture complète, 
+                  pour que vous puissiez vous concentrer sur l'essentiel : le bonheur de votre animal.
                 </p>
 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                    <span className="text-gray-700">Veterinary Care Coverage</span>
-                    <span className="font-semibold text-dogwalking-green">✓ Up to $25,000</span>
+                    <span className="text-gray-700">Couverture Soins Vétérinaires</span>
+                    <span className="font-semibold text-dogwalking-green">✓ Jusqu'à 25 000€</span>
                   </div>
                   
                   <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                    <span className="text-gray-700">24/7 Emergency Support</span>
-                    <span className="font-semibold text-dogwalking-green">✓ Always Available</span>
+                    <span className="text-gray-700">Support d'Urgence 24h/24</span>
+                    <span className="font-semibold text-dogwalking-green">✓ Toujours Disponible</span>
                   </div>
                   
                   <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                    <span className="text-gray-700">Identity Verification</span>
-                    <span className="font-semibold text-dogwalking-green">✓ All Sitters</span>
+                    <span className="text-gray-700">Vérification d'Identité</span>
+                    <span className="font-semibold text-dogwalking-green">✓ Tous les Promeneurs</span>
                   </div>
                 </div>
               </div>

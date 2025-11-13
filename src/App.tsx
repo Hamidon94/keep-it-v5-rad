@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Search from "./pages/Search";
 import BecomeSitter from "./pages/BecomeSitter";
@@ -27,8 +28,8 @@ import SitterProfile from "./pages/SitterProfile";
 import ProfileValidation from "./pages/ProfileValidation";
 import Booking from "./pages/Booking";
 import SitterOnboarding from "./pages/SitterOnboarding";
-import Admin from "./pages/Admin";
-import AdminLogin from "./pages/AdminLogin";
+
+
 import Careers from "./pages/Careers";
 import WalkTracking from "./pages/WalkTracking";
 import Blog from "./pages/Blog";
@@ -42,6 +43,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/search" element={<Search />} />
@@ -60,8 +62,8 @@ const App = () => (
           <Route path="/profile-validation" element={<ProfileValidation />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/sitter-onboarding" element={<SitterOnboarding />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/admin-login" element={<AdminLogin />} />
+
+
           <Route path="/careers" element={<Careers />} />
           <Route path="/walk-tracking/:bookingId" element={<WalkTracking />} />
           <Route path="/blog" element={<Blog />} />
