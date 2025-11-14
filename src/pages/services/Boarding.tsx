@@ -4,7 +4,7 @@ import SearchForm from "@/components/search/SearchForm";
 import { Link } from "react-router-dom";
 import { Home, Clock, Shield, Heart, Star, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import dogBoardingImage from "@/assets/dog-boarding.jpg";
+import dogBoardingImage from "@/assets/dog-boarding-cozy.jpg";
 
 const Boarding = () => {
   const benefits = [
