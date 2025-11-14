@@ -4,7 +4,7 @@ import SearchForm from "@/components/search/SearchForm";
 import { Link } from "react-router-dom";
 import { Clock, Home, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import dogWalkingImage from "@/assets/dog-walking.jpg";
+import dropInVisitImage from "@/assets/drop-in-visit-home.jpg";
 
 const DropInVisits = () => {
   return (
@@ -16,7 +16,7 @@ const DropInVisits = () => {
         <section className="relative py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-            style={{ backgroundImage: `url(${dogWalkingImage})` }}
+            style={{ backgroundImage: `url(${dropInVisitImage})` }}
           ></div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

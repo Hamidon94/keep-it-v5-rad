@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SearchForm from "@/components/search/SearchForm";
-import heroImage from "@/assets/hero-pets.jpg";
+import heroImage from "@/assets/hero-community-pets.jpg";
 
 const HeroSection = () => {
   return (
