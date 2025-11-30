@@ -8,13 +8,14 @@ All colors MUST be HSL format to match DogWalking.com design.
 
 @layer base {
   :root {
-    /* DogWalking Brand Colors */
+    /* DogWalking Brand Colors - Updated to teal/blue-gray */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --dogwalking-green: 159 100% 39%; /* #00C896 - DogWalking primary green */
-    --dogwalking-green-dark: 159 100% 32%; /* Darker green for hover states */
-    --dogwalking-blue: 214 98% 60%; /* #4285F4 - CTA button blue */
-    --dogwalking-blue-dark: 214 98% 50%; /* Darker blue for hover */
+    --dogwalking-primary: 195 70% 48%; /* Teal primary */
+    --dogwalking-primary-dark: 195 75% 38%; /* Darker teal */
+    --dogwalking-primary-light: 195 70% 58%; /* Lighter teal */
+    --dogwalking-secondary: 210 100% 60%; /* Blue-gray secondary */
+    --dogwalking-secondary-dark: 210 90% 45%; /* Darker blue-gray */
     --dogwalking-gray-light: 210 10% 96%; /* Light gray backgrounds */
     --dogwalking-gray: 215 16% 47%; /* Text gray */
     --dogwalking-gray-dark: 222 13% 26%; /* Dark text */
@@ -27,7 +28,7 @@ All colors MUST be HSL format to match DogWalking.com design.
     --popover: 0 0% 100%;
     --popover-foreground: var(--dogwalking-gray-dark);
 
-    --primary: var(--dogwalking-green);
+    --primary: var(--dogwalking-primary);
     --primary-foreground: 0 0% 100%;
 
     --secondary: var(--dogwalking-gray-light);
@@ -41,7 +42,7 @@ All colors MUST be HSL format to match DogWalking.com design.
     --muted: var(--dogwalking-gray-light);
     --muted-foreground: var(--dogwalking-gray);
 
-    --accent: var(--dogwalking-blue);
+    --accent: var(--dogwalking-secondary);
     --accent-foreground: 0 0% 100%;
 
     --destructive: var(--dogwalking-red);
@@ -49,12 +50,12 @@ All colors MUST be HSL format to match DogWalking.com design.
 
     --border: var(--dogwalking-search-border);
     --input: var(--dogwalking-search-border);
-    --ring: var(--dogwalking-green);
+    --ring: var(--dogwalking-primary);
 
     --radius: 0.75rem; /* DogWalking uses more rounded corners */
 
     /* DogWalking gradients and animations */
-    --dogwalking-gradient-hero: linear-gradient(135deg, hsl(var(--dogwalking-green)) 0%, hsl(var(--dogwalking-blue)) 100%);
+    --dogwalking-gradient-hero: linear-gradient(135deg, hsl(var(--dogwalking-primary)) 0%, hsl(var(--dogwalking-secondary)) 100%);
     --dogwalking-gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--dogwalking-gray-light)) 100%);
     --dogwalking-shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
     --dogwalking-shadow-elevated: 0 8px 30px hsl(0 0% 0% / 0.12);
@@ -127,7 +128,7 @@ All colors MUST be HSL format to match DogWalking.com design.
 
   /* DogWalking-specific utility classes */
   .dogwalking-hero-bg {
-    background: linear-gradient(135deg, hsl(var(--dogwalking-green) / 0.9) 0%, hsl(var(--dogwalking-blue) / 0.9) 100%);
+    background: linear-gradient(135deg, hsl(var(--dogwalking-primary) / 0.9) 0%, hsl(var(--dogwalking-secondary) / 0.9) 100%);
   }
 
   .dogwalking-card {
@@ -140,22 +141,22 @@ All colors MUST be HSL format to match DogWalking.com design.
   }
 
   .dogwalking-button-primary {
-    @apply bg-[hsl(var(--dogwalking-green))] hover:bg-[hsl(var(--dogwalking-green-dark))] text-white font-semibold rounded-xl px-6 py-3;
+    @apply bg-[hsl(var(--dogwalking-primary))] hover:bg-[hsl(var(--dogwalking-primary-dark))] text-white font-semibold rounded-xl px-6 py-3;
     transition: var(--dogwalking-transition);
   }
 
   .dogwalking-button-secondary {
-    @apply bg-[hsl(var(--dogwalking-blue))] hover:bg-[hsl(var(--dogwalking-blue-dark))] text-white font-semibold rounded-xl px-6 py-3;
+    @apply bg-[hsl(var(--dogwalking-secondary))] hover:bg-[hsl(var(--dogwalking-secondary-dark))] text-white font-semibold rounded-xl px-6 py-3;
     transition: var(--dogwalking-transition);
   }
 
   .dogwalking-input {
-    @apply border-[hsl(var(--dogwalking-search-border))] rounded-xl px-4 py-3 focus:border-[hsl(var(--dogwalking-green))] focus:ring-2 focus:ring-[hsl(var(--dogwalking-green)_/_0.2)];
+    @apply border-[hsl(var(--dogwalking-search-border))] rounded-xl px-4 py-3 focus:border-[hsl(var(--dogwalking-primary))] focus:ring-2 focus:ring-[hsl(var(--dogwalking-primary)_/_0.2)];
     transition: var(--dogwalking-transition);
   }
 
-  .dogwalking-text-green {
-    color: hsl(var(--dogwalking-green));
+  .dogwalking-text-primary {
+    color: hsl(var(--dogwalking-primary));
   }
 
   .dogwalking-text-gray {

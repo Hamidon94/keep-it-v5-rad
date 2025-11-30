@@ -1,10 +1,13 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
 import ServicesSection from "@/components/home/ServicesSection";
-import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
-import DogWalkingProtectSection from "@/components/home/DogWalkingProtectSection";
+import SecuritySection from "@/components/home/SecuritySection";
+import MapSearchSection from "@/components/home/MapSearchSection";
+import FeaturedWalkersSection from "@/components/home/FeaturedWalkersSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 
 const Index = () => {
   return (
@@ -12,10 +15,15 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <HowItWorksSection />
         <ServicesSection />
-        <WhyChooseUsSection />
-        <DogWalkingProtectSection />
+        <SecuritySection />
+        <div id="map-search">
+          <MapSearchSection />
+        </div>
+        <FeaturedWalkersSection />
         <TestimonialsSection />
+        <WhyChooseUsSection />
       </main>
       <Footer />
     </div>
