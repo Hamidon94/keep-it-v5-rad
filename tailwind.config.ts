@@ -22,13 +22,14 @@ export default {
         
         /* DogWalking Brand Colors */
         dogwalking: {
-          green: {
-            DEFAULT: "hsl(var(--dogwalking-green))",
-            dark: "hsl(var(--dogwalking-green-dark))",
+          primary: {
+            DEFAULT: "hsl(var(--dogwalking-primary))",
+            dark: "hsl(var(--dogwalking-primary-dark))",
+            light: "hsl(var(--dogwalking-primary-light))",
           },
-          blue: {
-            DEFAULT: "hsl(var(--dogwalking-blue))",
-            dark: "hsl(var(--dogwalking-blue-dark))",
+          secondary: {
+            DEFAULT: "hsl(var(--dogwalking-secondary))",
+            dark: "hsl(var(--dogwalking-secondary-dark))",
           },
           gray: {
             light: "hsl(var(--dogwalking-gray-light))",

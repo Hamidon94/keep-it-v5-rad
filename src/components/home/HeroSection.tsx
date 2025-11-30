@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import SearchForm from "@/components/search/SearchForm";
 import heroImage from "@/assets/hero-community-pets.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-dogwalking-green/10 via-dogwalking-blue/10 to-dogwalking-green/5">
+    <section className="relative min-h-[85vh] bg-gradient-to-br from-dogwalking-primary/10 via-dogwalking-secondary/10 to-dogwalking-primary/5">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -16,38 +15,38 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center min-h-screen py-20 gap-12">
-          {/* Left side - Text Content */}
-          <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Trouvez le Promeneur Certifié Idéal
-              <br />
-              <span className="dogwalking-text-green">pour Votre Compagnon</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">
-              Réservez des pet sitters et promeneurs de confiance.
-            </p>
+        <div className="flex flex-col items-center justify-center min-h-[85vh] py-20 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Trouver un promeneur de confiance
+            <br />
+            <span className="text-dogwalking-primary-light">près de chez vous</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">
+            Réservation sécurisée • Preuves photo/vidéo • Paiement protégé
+          </p>
 
-            {/* Mobile CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 lg:hidden mb-8">
-              <Link to="/search">
-                <Button className="dogwalking-button-secondary w-full sm:w-auto px-8 py-4 text-lg">
-                  Trouver un Pet Sitter
-                </Button>
-              </Link>
-              <Link to="/become-sitter">
-                <Button variant="outline" className="w-full sm:w-auto px-8 py-4 text-lg bg-white/10 border-white text-white hover:bg-white hover:text-gray-900">
-                  Devenir Pet Sitter
-                </Button>
-              </Link>
-            </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <Link to="/search">
+              <Button className="w-full sm:w-auto px-8 py-4 text-lg bg-gradient-to-r from-dogwalking-primary to-dogwalking-primary-dark hover:opacity-90 shadow-lg">
+                Trouver un promeneur
+              </Button>
+            </Link>
+            <Button 
+              variant="outline" 
+              className="w-full sm:w-auto px-8 py-4 text-lg bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-gray-900"
+              onClick={() => {
+                document.getElementById('map-search')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Voir la carte
+            </Button>
           </div>
-
-          {/* Right side - Search Form */}
-          <div className="flex-1 w-full max-w-lg">
-            <SearchForm className="bg-white/95 backdrop-blur-sm" />
-          </div>
+          
+          <p className="text-sm text-white/80 max-w-lg mx-auto">
+            Plus de 2 500 promeneurs vérifiés • Commission 13% • Paiement sécurisé en escrow
+          </p>
         </div>
       </div>
     </section>
