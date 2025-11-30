@@ -172,7 +172,7 @@ const Search = () => {
           <div className="lg:col-span-1">
             <div className="dogwalking-card p-6 sticky top-8">
               <div className="flex items-center space-x-2 mb-6">
-                <Filter className="w-5 h-5 text-dogwalking-green" />
+                <Filter className="w-5 h-5 text-dogwalking-primary" />
                 <h3 className="text-lg font-semibold text-gray-900">Filtres</h3>
               </div>
 
@@ -289,7 +289,7 @@ const Search = () => {
                           {sitter.name}
                         </h3>
                         {sitter.isStarSitter && (
-                          <span className="bg-dogwalking-orange text-white text-xs px-2 py-1 rounded-full font-medium">
+                          <span className="bg-dogwalking-secondary text-white text-xs px-2 py-1 rounded-full font-medium">
                             STAR
                           </span>
                         )}
@@ -312,7 +312,7 @@ const Search = () => {
                     </div>
 
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-dogwalking-green">
+                      <div className="text-2xl font-bold text-dogwalking-primary">
                         {sitter.price}€
                       </div>
                       <div className="text-sm text-gray-500">par nuit</div>
@@ -329,7 +329,7 @@ const Search = () => {
                     {sitter.services.map((service, index) => (
                       <span 
                         key={index}
-                        className="bg-dogwalking-green/10 text-dogwalking-green text-xs px-2 py-1 rounded-full"
+                        className="bg-dogwalking-primary/10 text-dogwalking-primary text-xs px-2 py-1 rounded-full"
                       >
                         {service}
                       </span>
@@ -340,7 +340,7 @@ const Search = () => {
                   <div className="space-y-1 mb-4">
                     {sitter.features.slice(0, 2).map((feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-dogwalking-green rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-dogwalking-primary rounded-full"></div>
                         <span className="text-sm text-gray-600">{feature}</span>
                       </div>
                     ))}

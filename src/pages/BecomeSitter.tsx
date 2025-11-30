@@ -108,7 +108,7 @@ const BecomeSitter = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
+        <section className="relative py-20 bg-gradient-to-br from-dogwalking-primary/10 to-dogwalking-secondary/10">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
             style={{ backgroundImage: `url(${dogBoardingImage})` }}
@@ -119,7 +119,7 @@ const BecomeSitter = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                 Gagnez de l'argent en gardant
                 <br />
-                <span className="dogwalking-text-green">des animaux</span>
+                <span className="dogwalking-text-primary">des animaux</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -141,15 +141,15 @@ const BecomeSitter = () => {
               {/* Quick Stats */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-dogwalking-green mb-2">500€+</div>
+                  <div className="text-3xl font-bold text-dogwalking-primary mb-2">500€+</div>
                   <div className="text-gray-600">revenus moyens/mois</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-dogwalking-green mb-2">97%</div>
+                  <div className="text-3xl font-bold text-dogwalking-primary mb-2">97%</div>
                   <div className="text-gray-600">d'avis 5 étoiles</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-dogwalking-green mb-2">24h/24</div>
+                  <div className="text-3xl font-bold text-dogwalking-primary mb-2">24h/24</div>
                   <div className="text-gray-600">support inclus</div>
                 </div>
               </div>
@@ -172,8 +172,8 @@ const BecomeSitter = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-dogwalking-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-primary">
                       {benefit.icon}
                     </div>
                   </div>
@@ -210,7 +210,7 @@ const BecomeSitter = () => {
                   <div className="border-t pt-4">
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
                     <div className="text-sm text-gray-500">{testimonial.location}</div>
-                    <div className="text-sm text-dogwalking-green">{testimonial.service}</div>
+                    <div className="text-sm text-dogwalking-primary">{testimonial.service}</div>
                   </div>
                 </div>
               ))}
@@ -234,7 +234,7 @@ const BecomeSitter = () => {
               {steps.map((step, index) => (
                 <div key={index} className="relative">
                   {/* Step Number */}
-                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-secondary rounded-full flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">
                       {step.number}
                     </span>
@@ -255,7 +255,7 @@ const BecomeSitter = () => {
                     <ul className="space-y-2">
                       {step.details.map((detail, detailIndex) => (
                         <li key={detailIndex} className="flex items-center space-x-2">
-                          <CheckCircle className="w-4 h-4 text-dogwalking-green flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-dogwalking-primary flex-shrink-0" />
                           <span className="text-sm text-gray-700">{detail}</span>
                         </li>
                       ))}
@@ -295,8 +295,8 @@ const BecomeSitter = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <div key={index} className="dogwalking-card p-6 text-center">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-dogwalking-green">
+                  <div className="w-12 h-12 mx-auto mb-4 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-primary">
                       {service.icon}
                     </div>
                   </div>
@@ -309,7 +309,7 @@ const BecomeSitter = () => {
                     {service.description}
                   </p>
                   
-                  <div className="text-lg font-bold text-dogwalking-green">
+                  <div className="text-lg font-bold text-dogwalking-primary">
                     {service.price}
                   </div>
                 </div>
@@ -329,8 +329,8 @@ const BecomeSitter = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue/10 rounded-full flex items-center justify-center">
-                  <Shield className="w-8 h-8 text-dogwalking-blue" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-secondary/10 rounded-full flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-dogwalking-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   La DogWalking Guarantee
@@ -341,8 +341,8 @@ const BecomeSitter = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue/10 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-dogwalking-blue" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-secondary/10 rounded-full flex items-center justify-center">
+                  <Users className="w-8 h-8 text-dogwalking-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Application DogWalking
@@ -353,8 +353,8 @@ const BecomeSitter = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue/10 rounded-full flex items-center justify-center">
-                  <Clock className="w-8 h-8 text-dogwalking-blue" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-secondary/10 rounded-full flex items-center justify-center">
+                  <Clock className="w-8 h-8 text-dogwalking-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Support 24h/24
@@ -379,11 +379,11 @@ const BecomeSitter = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/signup?type=sitter">
-                <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
+                <Button className="dogwalking-button-primary bg-white text-dogwalking-primary hover:bg-gray-100 px-8 py-4 text-lg">
                   Devenir pet sitter
                 </Button>
               </Link>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-primary px-8 py-4 text-lg">
                 Télécharger l'app
               </Button>
             </div>
