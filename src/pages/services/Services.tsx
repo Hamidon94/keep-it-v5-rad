@@ -66,7 +66,7 @@ const Services = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-primary/10 to-dogwalking-secondary/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -103,14 +103,14 @@ const Services = () => {
                   {/* Content */}
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="text-dogwalking-green">
+                      <div className="text-dogwalking-primary">
                         {service.icon}
                       </div>
                       <div>
                         <h2 className="text-3xl font-bold text-gray-900">
                           {service.title}
                         </h2>
-                        <p className="text-dogwalking-green font-medium">
+                        <p className="text-dogwalking-primary font-medium">
                           {service.subtitle}
                         </p>
                       </div>
@@ -124,7 +124,7 @@ const Services = () => {
                     <div className="grid grid-cols-2 gap-3 mb-8">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-dogwalking-green rounded-full flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-dogwalking-primary rounded-full flex-shrink-0"></div>
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </div>
                       ))}
@@ -174,7 +174,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">30 min / 1h</td>
                       <td className="py-4 px-4 text-center text-gray-700">Extérieur</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">7€ (30min) / 13€ (1h)</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">7€ (30min) / 13€ (1h)</td>
                       <td className="py-4 px-4 text-center text-gray-700">Journées chargées</td>
                     </tr>
                     <tr>
@@ -184,7 +184,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">30 min</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">19€</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">19€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chats, courtes absences</td>
                     </tr>
                     <tr>
@@ -194,7 +194,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">30 min</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">35€</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">35€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Soins spécialisés</td>
                     </tr>
                     <tr>
@@ -204,7 +204,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">24h / nuitée</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">31€</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">31€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Animaux anxieux</td>
                     </tr>
                     <tr>
@@ -214,7 +214,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">24h</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">26€</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">26€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Vacances, voyages</td>
                     </tr>
                     <tr>
@@ -224,7 +224,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">Variable</td>
                       <td className="py-4 px-4 text-center text-gray-700">Vétérinaire</td>
-                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">35€</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-primary">35€</td>
                       <td className="py-4 px-4 text-center text-gray-700">Urgences, consultations</td>
                     </tr>
                   </tbody>
@@ -246,12 +246,12 @@ const Services = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/search">
-                <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
+                <Button className="dogwalking-button-primary bg-white text-dogwalking-primary hover:bg-gray-100 px-8 py-4 text-lg">
                   Trouver un pet sitter
                 </Button>
               </Link>
               <Link to="/become-sitter">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-primary px-8 py-4 text-lg">
                   Devenir pet sitter
                 </Button>
               </Link>

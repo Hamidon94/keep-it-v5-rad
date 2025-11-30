@@ -81,11 +81,11 @@ const Safety = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-primary/10 to-dogwalking-secondary/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                <Shield className="w-10 h-10 text-dogwalking-green" />
+              <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                <Shield className="w-10 h-10 text-dogwalking-primary" />
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -115,8 +115,8 @@ const Safety = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {safetyFeatures.map((feature, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-dogwalking-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-primary">
                       {feature.icon}
                     </div>
                   </div>
@@ -149,7 +149,7 @@ const Safety = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {dogwalkingGuarantee.map((item, index) => (
                 <div key={index} className="dogwalking-card p-8 text-center">
-                  <div className="text-3xl font-bold text-dogwalking-green mb-4">
+                  <div className="text-3xl font-bold text-dogwalking-primary mb-4">
                     {item.amount}
                   </div>
                   
@@ -194,7 +194,7 @@ const Safety = () => {
                   <ul className="space-y-4">
                     {section.tips.map((tip, tipIndex) => (
                       <li key={tipIndex} className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-dogwalking-green flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-dogwalking-primary flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{tip}</span>
                       </li>
                     ))}
@@ -223,7 +223,7 @@ const Safety = () => {
 
             <div className="dogwalking-card p-8 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-3 mb-4">
-                <Phone className="w-6 h-6 text-dogwalking-green" />
+                <Phone className="w-6 h-6 text-dogwalking-primary" />
                 <span className="text-2xl font-bold text-gray-900">
                   01 23 45 67 89
                 </span>
@@ -254,7 +254,7 @@ const Safety = () => {
               Trouvez le pet sitter parfait avec la garantie de nos standards de sécurité
             </p>
             
-            <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
+            <Button className="dogwalking-button-primary bg-white text-dogwalking-primary hover:bg-gray-100 px-8 py-4 text-lg">
               Commencer ma recherche
             </Button>
           </div>

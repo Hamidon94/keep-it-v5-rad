@@ -56,7 +56,7 @@ const About = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-primary/10 to-dogwalking-secondary/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               À propos de DogWalking
@@ -79,7 +79,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-4xl font-bold text-dogwalking-green mb-2">
+                  <div className="text-4xl font-bold text-dogwalking-primary mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-600">
@@ -122,8 +122,8 @@ const About = () => {
               
               <div className="dogwalking-card p-8">
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                    <Heart className="w-16 h-16 text-dogwalking-green" />
+                  <div className="w-32 h-32 mx-auto mb-6 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                    <Heart className="w-16 h-16 text-dogwalking-primary" />
                   </div>
                   
                   <blockquote className="text-xl text-gray-700 italic mb-4">
@@ -131,7 +131,7 @@ const About = () => {
                     même quand ses propriétaires ne peuvent pas être là."
                   </blockquote>
                   
-                  <cite className="text-dogwalking-green font-semibold">
+                  <cite className="text-dogwalking-primary font-semibold">
                     — Équipe DogWalking
                   </cite>
                 </div>
@@ -155,8 +155,8 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {values.map((value, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-dogwalking-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-primary">
                       {value.icon}
                     </div>
                   </div>
@@ -199,7 +199,7 @@ const About = () => {
                     {member.name}
                   </h3>
                   
-                  <p className="text-dogwalking-green font-medium mb-4">
+                  <p className="text-dogwalking-primary font-medium mb-4">
                     {member.role}
                   </p>
                   
@@ -217,8 +217,8 @@ const About = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="dogwalking-card p-12">
               <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-8 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
-                  <Target className="w-10 h-10 text-dogwalking-green" />
+                <div className="w-20 h-20 mx-auto mb-8 bg-dogwalking-primary/10 rounded-full flex items-center justify-center">
+                  <Target className="w-10 h-10 text-dogwalking-primary" />
                 </div>
                 
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -233,7 +233,7 @@ const About = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                   <div className="flex items-start space-x-3">
-                    <Award className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
+                    <Award className="w-6 h-6 text-dogwalking-primary mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Excellence du service</h4>
                       <p className="text-gray-600">Nous nous engageons à fournir le meilleur service possible pour chaque animal.</p>
@@ -241,7 +241,7 @@ const About = () => {
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Globe className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
+                    <Globe className="w-6 h-6 text-dogwalking-primary mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Impact global</h4>
                       <p className="text-gray-600">Nous œuvrons pour améliorer la vie des animaux partout dans le monde.</p>
@@ -264,10 +264,10 @@ const About = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
+              <Button className="dogwalking-button-primary bg-white text-dogwalking-primary hover:bg-gray-100 px-8 py-4 text-lg">
                 Trouver un pet sitter
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-primary px-8 py-4 text-lg">
                 Devenir pet sitter
               </Button>
             </div>
