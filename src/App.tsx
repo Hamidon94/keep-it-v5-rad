@@ -34,6 +34,11 @@ import Careers from "./pages/Careers";
 import WalkTracking from "./pages/WalkTracking";
 import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
+import FAQ from "./pages/FAQ";
+import Settings from "./pages/Settings";
+import Messages from "./pages/Messages";
+import Notifications from "./pages/Notifications";
+import PetProfile from "./pages/PetProfile";
 
 const queryClient = new QueryClient();
 
