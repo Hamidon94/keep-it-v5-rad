@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Footprints, Home, Dumbbell, Users, Heart, GraduationCap, Stethoscope } from "lucide-react";
+import { Footprints, Home, Moon, House, Sparkles, Stethoscope } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      title: "Balade quotidienne",
-      description: "Promenades régulières adaptées au rythme et aux besoins de votre chien",
+      title: "Promenade",
+      description: "Promenades de durée libre adaptées au rythme et aux besoins de votre chien",
       icon: Footprints,
       price: "à partir de 8€",
       link: "/services/dog-walking"
@@ -20,39 +20,32 @@ const ServicesSection = () => {
       link: "/services/drop-in-visits"
     },
     {
-      title: "Sortie sportive",
-      description: "Activités physiques intenses pour les chiens énergiques (course, vélo)",
-      icon: Dumbbell,
+      title: "Hébergement chez promeneur",
+      description: "Garde de jour ou de nuit chez un promeneur de confiance",
+      icon: Moon,
+      price: "à partir de 10€",
+      link: "/services/boarding"
+    },
+    {
+      title: "Garde à domicile",
+      description: "Votre pet sitter s'installe chez vous pour une garde sur-mesure",
+      icon: House,
       price: "à partir de 12€",
-      link: "/services/dog-walking"
+      link: "/services/house-sitting"
     },
     {
-      title: "Socialisation",
-      description: "Rencontres supervisées avec d'autres chiens pour améliorer la sociabilité",
-      icon: Users,
-      price: "à partir de 10€",
-      link: "/services/doggy-daycare"
-    },
-    {
-      title: "Balade personnalisée",
-      description: "Parcours sur-mesure selon les préférences et la condition de votre chien",
-      icon: Heart,
-      price: "à partir de 10€",
-      link: "/services/dog-walking"
-    },
-    {
-      title: "Support éducatif léger",
-      description: "Renforcement positif et exercices éducatifs pendant les promenades",
-      icon: GraduationCap,
+      title: "Visite sanitaire / Entretien",
+      description: "Soins d'hygiène et d'entretien avec les produits du propriétaire",
+      icon: Sparkles,
       price: "à partir de 16€",
-      link: "/services/dog-walking"
+      link: "/services/drop-in-visits"
     },
     {
       title: "Accompagnement vétérinaire",
       description: "Transport et accompagnement chez le vétérinaire pour les rendez-vous",
       icon: Stethoscope,
       price: "à partir de 13€",
-      link: "/services/house-sitting"
+      link: "/services/vet-accompaniment"
     }
   ];
 
@@ -64,11 +57,11 @@ const ServicesSection = () => {
             Nos Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            7 services adaptés aux besoins de votre compagnon
+            6 services adaptés aux besoins de votre compagnon
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
               <CardContent className="p-6">
