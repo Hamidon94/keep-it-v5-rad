@@ -115,7 +115,7 @@ const FAQ = () => {
         },
         {
           question: "Combien puis-je gagner comme promeneur ?",
-          answer: "Vos revenus dépendent de vos tarifs, disponibilités et zone géographique. En moyenne, un promeneur actif gagne entre 500€ et 1500€/mois. La plateforme prélève une commission de 15% sur chaque service."
+          answer: "Vos revenus dépendent de vos tarifs, disponibilités et zone géographique. En moyenne, un promeneur actif gagne entre 500€ et 1500€/mois. La plateforme prélève une commission de 13% sur chaque service."
         },
         {
           question: "Quels documents dois-je fournir ?",
